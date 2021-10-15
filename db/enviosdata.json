@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "fechaAlta": "01/01/2021",
+        "destino": "Mendoza",
+        "email": "rz@gmail.com",
+        "pendiente": "01/01/2021"
+      
+    },
+    {
+        "id": "2",
+        "fechaAlta": "02/02/2021",
+        "destino": "Cordoba",
+        "email": "aabb@gmail.com",
+        "pendiente": "02/02/2021"
+      
+    },
+    {
+        "id": "3",
+        "fechaAlta": "03/03/2021",
+        "destino": "BsAs",
+        "email": "eerr@gmail.com",
+        "pendiente": "03/03/2021"
+      
+    },
+    {
+        "id": "4",
+        "fechaAlta": "04/04/2021",
+        "destino": "Santa Fe",
+        "email": "ppoo@gmail.com",
+        "pendiente": "04/04/2021"
+      
+    },
+    {
+        "id": "5",
+        "fechaAlta": "05/05/2021",
+        "destino": "Salta",
+        "email": "rree@gmail.com",
+        "pendiente": "05/05/2021"
+      
+    }
+]

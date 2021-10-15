@@ -1,0 +1,48 @@
+AWSTemplateFormatVersion: '2019-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: API de envios
+
+Globals:
+  Function:
+    Timeout: 5
+
+Resources:
+  EnviosPendientes:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: envios-api/
+      Handler: get_envios.lambda_handler
+      Runtime: python3.8
+      Timeout: 180
+      Events:
+        ListPendientes:
+          Type: Api
+          Properties:
+            Path: /envios/pendientes
+            Method: get
+  CrearEnvio:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: envios-api/
+      Handler: create_envio.lambda_handler
+      Runtime: python3.8
+      Timeout: 180
+      Events:
+        ListPendientes:
+          Type: Api
+          Properties:
+            Path: /envios
+            Method: post
+  Entregado:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: envios-api/
+      Handler: put_envio.lambda_handler
+      Runtime: python3.8
+      Timeout: 180
+      Events:
+        ListPendientes:
+          Type: Api
+          Properties:
+            Path: /envios/{idEnvio}/entregado
+            Method: put
